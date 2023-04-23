@@ -60,7 +60,7 @@ const AddCardForm = ({
       <CardSecurityCodeInput />
       <CardPasswordInput />
       <div className={styles.button}>
-        <NextButton />
+        <NextButton type={'submit'}>다음</NextButton>
       </div>
     </form>
   );

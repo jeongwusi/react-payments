@@ -8,7 +8,10 @@ const meta = {
 
 type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
-  args: {},
+  args: {
+    type: 'submit',
+    children: 'string',
+  },
 };
 
 export default meta;
