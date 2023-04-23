@@ -12,18 +12,16 @@ type InputProps = {
 const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ width, value, name, maxLength = 9999999, onChange = undefined, ...rest }, ref) => {
     return (
-      <>
-        <input
-          className={styles.input}
-          name={name}
-          style={{ width }}
-          value={value}
-          maxLength={maxLength}
-          onChange={onChange}
-          ref={ref}
-          {...rest}
-        />
-      </>
+      <input
+        className={styles.input}
+        name={name}
+        style={{ width }}
+        value={value}
+        maxLength={maxLength}
+        onChange={onChange}
+        ref={ref}
+        {...rest}
+      />
     );
   }
 );
